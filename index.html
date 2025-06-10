@@ -3,22 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Teste - Fazleep</title>
+    <title>Fazleep - Desenvolvedor Web & Software</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
+    </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Portfólio!</h1>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Fazleep</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <p>Olá, sou Felipe e vai Corinthians!</p>
-        <img src="img/teste.jpg" alt="Imagem de Teste do Portfólio">
-        <p>Obrigado por vir até aqui Miss!!</p>
-    </main>
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="intro-text">Olá, eu sou</p>
+                <h1>Fazleep</h1>
+                <p class="role">Desenvolvedor Web & Software</p>
+                <a href="#projetos" class="btn primary-btn">Ver Projetos</a>
+                <a href="#contato" class="btn secondary-btn">Fale Comigo</a>
+            </div>
+            </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Fezleep. Todos os direitos reservados.</p>
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="img/foto_perfil.jpg" alt="Foto de Perfil Fezleep" class="profile-pic">
+                <p>Sou um desenvolvedor apaixonado por criar soluções digitais intuitivas e eficientes. Com foco em...</p>
+                <p>Minha jornada no desenvolvimento começou com... e desde então venho aprimorando minhas habilidades em...</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React / Vue.js</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Python / Django</div>
+                </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img/projeto1.jpg" alt="Projeto 1">
+                    <h3>Nome do Projeto 1</h3>
+                    <p>Uma breve descrição do projeto, tecnologias usadas e o que ele faz.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">Ver Demo</a>
+                        <a href="#" target="_blank" class="btn project-btn">Código (GitHub)</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/projeto2.jpg" alt="Projeto 2">
+                    <h3>Nome do Projeto 2</h3>
+                    <p>Descrição do segundo projeto.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">Ver Demo</a>
+                        <a href="#" target="_blank" class="btn project-btn">Código (GitHub)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Fale Comigo</h2>
+            <p>Estou sempre aberto a novas oportunidades e colaborações. Entre em contato!</p>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn primary-btn">Enviar Mensagem</button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="https://github.com/feezleep" target="_blank">GitHub</a>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Fazleep. Desenvolvido com <span class="heart">&hearts;</span> e paixão.</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
